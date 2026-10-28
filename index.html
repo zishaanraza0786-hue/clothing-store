@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FASHION NEEDS | Ladies & Kids Wear in Ballabgarh</title>
+  <meta name="description" content="Discover ladies wear, kids wear and festive clothing at Fashion Needs in Ballabgarh.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Announcement -->
+  <div class="announcement">
+    Discover timeless styles for ladies and kids
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid px-lg-5">
+      <a class="navbar-brand" id="shopName" href="#home">FASHION NEEDS</a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#collection">NEW IN</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collection" data-nav-category="Ladies">LADIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collection" data-nav-category="Kids">KIDS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collection" data-nav-category="Festive">FESTIVE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">OUR STORE</a></li>
+        </ul>
+
+        <a class="nav-search" href="#collection" aria-label="Go to product search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 4.5 4.5"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-section" id="home">
+    <div class="hero-image"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">THE LATEST COLLECTION</p>
+        <h1 id="heroTitle">Everyday Elegance.<br>Timeless Style.</h1>
+        <p class="hero-description">
+          Discover thoughtfully selected styles for ladies and kids,
+          made for everyday moments and special occasions.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#collection" class="btn btn-dark custom-btn">EXPLORE COLLECTION</a>
+          <a href="#about" class="btn btn-outline-light custom-btn">OUR STORE</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Collection -->
+  <main id="collection" class="collection-section">
+    <div class="container-fluid px-lg-5">
+      <div class="collection-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Shop the Collection</h2>
+        </div>
+
+        <div class="search-wrap">
+          <input type="search" id="productSearch"
+            class="form-control" placeholder="Search collection..."
+            aria-label="Search products">
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Sidebar -->
+        <aside class="col-12 col-lg-2">
+          <div class="category-sidebar">
+            <h3>Shop by Category</h3>
+
+            <button type="button" class="category-link active filter-btn"
+              data-category="All">View All</button>
+            <button type="button" class="category-link filter-btn"
+              data-category="Ladies">Ladies Wear</button>
+            <button type="button" class="category-link filter-btn"
+              data-category="Kids">Kids Wear</button>
+            <button type="button" class="category-link filter-btn"
+              data-category="Festive">Festive Collection</button>
+
+            <div class="sidebar-note">
+              <span class="note-line"></span>
+              <p>Style for every generation.</p>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product grid -->
+        <section class="col-12 col-lg-10" aria-label="Product collection">
+          <div class="row g-3 g-xl-4" id="productContainer"></div>
+          <p id="noProducts" class="no-products" hidden>
+            No products found. Try another search or category.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Store section -->
+  <section class="about-section" id="about">
+    <div class="container text-center">
+      <p class="eyebrow">A LITTLE ABOUT US</p>
+      <h2>Style for Every Generation</h2>
+      <p class="about-copy">
+        From everyday essentials to festive favourites, discover
+        clothing for ladies and children at FASHION NEEDS.
+      </p>
+      <p class="store-location">
+        Visit us in <strong id="shopCity">Ballabgarh</strong>
+      </p>
+      <a href="#contact" class="text-link">GET IN TOUCH ↗</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container text-center">
+      <p class="eyebrow">WE'RE HERE TO HELP</p>
+      <h2>Find Your Next Favourite</h2>
+      <p>Contact us to ask about sizes, availability and our latest collection.</p>
+      <a id="whatsappButton" class="btn btn-dark custom-btn mt-3"
+        href="#" target="_blank" rel="noopener noreferrer">
+        ENQUIRE ON WHATSAPP
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <a class="footer-brand" href="#home" id="footerShopName">FASHION NEEDS</a>
+      <small>© <span id="currentYear"></span> FASHION NEEDS. All rights reserved.</small>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="config.js"></script>
+  <script src="first.js"></script>
+</body>
+</html>
